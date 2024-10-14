@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Gradient</title>
+</head>
+  <body>
+      <nav>
+        <a href="index.html" class="active">Css Gradient</a>
+        <a href="linear.html">Linear Gradient</a>
+        <a href="radial.html">Radial Gradient</a>
+        <a href="conic.html">Conic Gradient</a>
+      </nav>
+        <div>
+            <h1>The Conic Gradient</h1>
+            <h3>The conic gradient is a type of CSS gradient that creates a smooth transition of <br>
+              colors around a central point, much like the slices of a pie chart or a color wheel.<br>
+              Unlike linear or radial gradients, conic gradients transition colors based on angular<br>
+              direction, radiating around a central point.
+            </h3>
+            <h2>This is a basic syntax for conic gradient:</h2>
+            <div class="syntax2"> 
+                <h3> 
+                  background: conic-gradient(color1, color2, color3, ...);
+                </h3>
+            </div>
+            <h2>Result:</h2>
+            <div class="sense"></div>
+            <h3>In this example, the conic gradient transitions from red to yellow to blue in a circular manner.</h3>
+        </div><br>
+
+        <div>
+            <h1><li>Starting Angle:</h1>
+            <h3>The starting angle of a conic gradient determines the point (in degrees) at<br>
+              which the first color begins. By default, the gradient starts at 0 degrees<br> (the 
+              top of the element), but this can be changed.
+            </h3> 
+            <h3>You can control the starting point of the gradient using the<span class="from"> from</span> keyword, which allows the<br>
+                gradient to begin at any angle, measured in degrees. This is particularly useful for creating<br>
+                specific effects, such as rotating the gradient.
+            </h3>
+            <h2>Syntax</h2>
+            <div class="syntax2"> 
+                <h3> 
+                  background: conic-gradient(from angle, color1, color2, ...);
+                </h3>
+            </div>
+            <h3>CODE</h3>
+
+            <div class="code-block1">
+                <span class="highlight">background</span><span class="rest">: conic-gradient(from 45deg, red, yellow, blue);
+                </span>
+            </div>
+
+            <h2>Result:</h2>
+            <div class="sense1"></div>
+            <h3>In this example, the gradient starts from 45 degrees, creating a rotated effect for the color transitions.</h3>
+        </div><br>
+
+        <div>
+            <h1><li>Conic Gradient with Unequal Sectors:</h1>
+            <h3>A conic gradient with unequal sectors is a gradient where each color occupies a different portion of the<br>
+                circle, creating a pie-chart-like effect.
+            </h3>
+            <h3>In a standard conic gradient, each color sector is equal in size. However, by specifying angular stops for<br>
+                each color, you can control the size of each sector and create custom patterns where some colors occupy<br>
+                more space than others.
+            </h3>
+            <h2>Syntax</h2>
+            <div class="syntax2"> 
+                    <h3> 
+                    background: conic-gradient(color1 start1deg stop1deg, color2 start2deg stop2deg, ...);
+                    </h3>
+            </div>
+                <h3>CODE</h3>
+                <div class="code-block1">
+                    <span class="highlight">background</span><span class="rest">:  conic-gradient(red 0deg 120deg, yellow 120deg 240deg, blue 240deg 360deg);
+                    </span>
+                </div>
+
+                <h2>Result:</h2>
+                <div class="sense2"></div>
+                <h3>In this example, the gradient has three unequal sectors:</h3>
+                <h3><li>Red occupies 0 to 120 degrees,</h3>
+                <h3><li>Yellow occupies 120 to 240 degrees,</h3>
+                <h3><li>Blue occupies 240 to 360 degrees.</h3>
+
+
+        </div><br>
+
+        <div>
+          <h1><li>Full-Spectrum Color Wheel:</h1>
+          <h3>A full-spectrum color wheel is a conic gradient that includes a smooth<br> transition
+              between all primary and secondary colors, creating a circular rainbow effect.
+          </h3>
+          <h3>This type of conic gradient is often used for creating color wheels, as it transitions<br>
+              through the full color spectrum. The gradient is continuous, ensuring that the colors <br>
+              blend smoothly across the wheel.
+          </h3>
+          <h2>Syntax</h2>
+          <div class="syntax2"> 
+                    <h3> 
+                    background: conic-gradient(color1, color2, color3, ..., color1);
+                    </h3>
+          </div>
+          <h3>CODE</h3>
+          <div class="code-block1">
+                  <span class="highlight">background</span><span class="rest">:  conic-gradient( red, orange, yellow, green, blue, violet, red);
+                  </span>
+          </div>
+
+                <h2>Result:</h2>
+                <div class="sense3"></div>
+                <h3>In this example, the conic gradient smoothly transitions between all the <br>rainbow colors and loops back to red, creating a full circular color wheel.
+
+                </h3>
+
+
+        </div><br>
+
+        <div>
+          <h1><li>Conic Gradient with Transparency</h1>
+          <h3>A conic gradient with transparency includes transparent or semi-<br>transparent colors,
+              allowing part of the background to show through the gradient.
+
+          </h3>
+          <h3>By using the transparent keyword or RGBA values with alpha transparency, you can<br>
+              create gradients where colors fade out, letting the underlying background become visible.<br>
+              This technique is useful for creating overlays and layering effects.
+          </h3>
+          <h2>Syntax</h2>
+          <div class="syntax2"> 
+                    <h3> 
+                    background: conic-gradient(from angle, transparent, color1, color2, transparent);
+                    </h3>
+          </div>
+          <h3>CODE</h3>
+          <div class="code-block1">
+                  <span class="highlight">background</span><span class="rest">:  conic-gradient(from 0deg, transparent, red 90deg, yellow 180deg,<br> blue 270deg, transparent 360deg);
+                  </span>
+          </div>
+          <h2>Result:</h2>
+          <div class="sense4"></div>
+          <h3>In this example, the gradient transitions from transparent to red, yellow, and <br>
+              blue, and back to transparent, revealing parts of the element’s background.
+
+          </h3>
+
+
+        </div><br>
+
+        <div>
+          <h1> Repeating Conic Gradients</h1>
+          <h3>A repeating conic gradient repeats a set of colors in a loop <br>around the center 
+             of the element, creating a continuous, patterned effect.
+
+          </h3> 
+          <h3>Repeating conic gradients are useful for creating striped or circular patterns <br>
+              that repeat infinitely within the element.<br>
+              The gradient repeats itself once it completes the full 360 degrees.</h3>
+              <h2>Syntax</h2>
+          <div class="syntax2"> 
+                    <h3> 
+                    background: repeating-conic-gradient(color1 stop1deg, color2 stop2deg, ...);
+                    </h3>
+          </div>
+          <h3>CODE</h3>
+          <div class="code-block1">
+                  <span class="highlight">background</span><span class="rest">:   repeating-conic-gradient(red 0deg, yellow 30deg, blue 60deg);
+                  </span>
+          </div>
+          <h2>Result:</h2>
+          <div class="sense5"></div>
+          <h3>In this example, the gradient repeats every 60 degrees, creating a<br> circular 
+          striped pattern with alternating red, yellow, and blue segments.
+
+          </h3>
+        </div>
+        <h1>Conclution</h1>
+        <h3>Conic gradients in CSS offer a powerful way to create visually dynamic <br>and
+            complex color patterns. By manipulating the starting angle, sector<br>
+            sizes, transparency, and repeating patterns, designers can achieve a <br>
+            wide range of effects suitable for everything from simple backgrounds <br>
+            to intricate visual elements.
+        </h3>
+      
+  
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Gradient</title>
+</head>
+  <body>
+        <nav>
+          <a href="index.html" class="active">Css Gradient</a>
+          <a href="linear.html">Linear Gradient</a>
+          <a href="radial.html">Radial Gradient</a>
+          <a href="conic.html">Conic Gradient</a>
+        </nav>
+
+
+              <h1>The Radial Gradient</h1>
+              <h3>The Radial gradients create a transition of colors radiating from a central<br> point outward.
+                Unlike linear gradients, which blend colors along a straight <br>line, radial gradients produce 
+                a circular or elliptical effect. They can add depth<br> and dimension to web designs, enhancing 
+                visual interest in backgrounds, buttons,<br> and other elements.
+              </h3>
+              <h2>This is a basic syntax for radial gradient:</h2>
+
+
+        <div class="syntax2"> 
+                <h3> background: radial-gradient(shape size at position, color-stop1, color-stop2, ...);
+                </h3>
+        </div>
+
+
+              <h4><li>The Shape: Specifies the shape of the gradient (circle or ellipse).</li></h4>
+              <h4><li>Size: Defines how the gradient is sized (e.g.,<span class="highlight">closest-side,</span> <span class="highlight"> farthest-corner,</span> or specific dimensions).</li></h4>
+              <h4><li>Position: Determines the starting point of the gradient (default is center).</li></h4><br>
+
+        <div class="excel">
+              <h2>Shapes of Radial Gradient</h2>
+              <h3>Radial gradients can be defined in two shapes,<br>Which are:</h3>
+              <h4><li>Circle: The gradient appearing as a circle.</li></h4>
+              <h4><li>Ellipse: The gradient will stretch into an elliptical shape.</li></h4>
+              <h3>To specify the shape, use the following syntax:</h3>
+
+              <h3>For Circle:</h3>
+
+          <div class="syntax2"> 
+              <h3>  background: radial-gradient(circle, color-stop1, color-stop2);</h3>
+          </div>
+
+          
+              <h3>Example:</h3>
+              <h4>This creates a circular gradient that starts with red at the center and transitions to blue at the edges.</h4>
+              <div class="yield"></div>
+              <h3>For Ellipse:</h3>
+
+
+          <div class="syntax2"> 
+              <h3>  background: radial-gradient(circle, color-stop1, color-stop2);</h3>
+          </div>
+
+
+              <h3>Example:</h3>
+              <h4>This creates an elliptical gradient that transitions from red at the center to green at the edges.</h4>
+              <div class="yield1"></div>
+        </div>
+              <h2>The radial Gradient Size and Position</h2>
+              <h3>The size of a radial gradient can be controlled by using keywords or specific dimensions:</h3><br>
+              <h1><li>Keywords:</li></h1>
+
+        <div class="excel1">
+              <h2><li><span class="highlight">Closest-side:</span> The gradient will extend to the closest edge of the box.</li></h2>
+              <h3>The gradient expands outward from the center until it reaches the side (top, bottom, left, or right)<br> closest to the center point. This makes the gradient fit tightly inside the element, often cutting off<br> at the nearest edge.</h3>
+              <h2>Syntax:</h2>
+          <div class="syntax2"> 
+              <h3>background: radial-gradient(circle closest-side, red, blue);</h3>
+          </div>
+              <h2>Example:</h2>
+              <h4>The gradient will start as a circle in the center and extend until it reaches the nearest edge of the element. <br>It will transition from red to blue.</h4>
+              <h3>CODE</h3>
+
+          <div class="code-block">
+              <span class="highlight">background-image</span><span class="rest">:radial-gradient(circle closest-side, red, blue);</span>
+          </div>
+
+
+              <h4>RESULT:</h4>
+          <div class="yield2"></div><br>
+        </div><br>
+
+
+        <div class="excel2">
+                        <h2><li><span class="highlight">farthest-side: </span>The gradient will extend to the farthest edge of the box.</li></h2>
+                        <h3>In this case, the gradient expands until it reaches the side of the container that is farthest from <br>the center point. This ensures the gradient covers a larger portion of the element, and it may fit<br> the entire container if the container is more square in shape.</h3>
+                        <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3> background: radial-gradient(circle farthest-side, red, green);</h3>
+                </div>
+                        <h2>Example:</h2>
+                        <h4>The gradient starts at the center and extends outward until it reaches the farthest edge of the container,<br> transitioning from red to green.</h4>
+                        <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">:  radial-gradient(circle farthest-side, red, green);</span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield3"></div><br>
+
+        </div><br>
+
+        <div class="excel3">
+                        <h2><li><span class="highlight">closest-corner:</span> The gradient will reach the closest corner.</li></h2>
+                        <h3>This keyword causes the gradient to stretch from the center of the element to the nearest <br>corner. <br>The gradient will be more circular or elliptical depending on the shape of the container.</h3>
+                        <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background: radial-gradient(circle closest-corner, orange, purple);</h3>
+                </div>
+                        <h2>Example:</h2>
+                        <h4>The gradient will radiate from the center until it reaches the nearest corner of the container, transitioning <br>from orange to purple.</h4>
+                        <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">:radial-gradient(circle closest-corner, orange, purple);
+                </span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield4"></div>
+
+        </div><br>
+
+        <div class="excel4">
+
+                        <h2><li><span class="highlight">farthest-corner:</span> The gradient will reach the farthest corner.</li></h2>
+                        <h3>This option creates the largest possible radial gradient, extending from the center to the <br> farthest corner of the element. It ensures that the gradient fills the entire element, making <br> it the most expansive option.</h3>
+                        <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background: radial-gradient(circle farthest-corner, pink, blue);</h3>
+                </div>
+                        <h2>Example:</h2>
+                        <h4>The gradient will extend from the center to the farthest corner of the element, transitioning from pink to blue, <br>ensuring that the gradient covers the entire container.</h4>
+                        <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">: radial-gradient(circle farthest-corner, pink, blue);</span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield5"></div>
+                <h2>For positioning, you can also use keywords like
+                <span class="highlight">center,</span> <span class="highlight"> top left,</span> 
+                <span class="highlight"> bottom right,</span> or specific <br>coordinates (e.g., <span class="highlight">50%</span>
+                <span class="highlight"> 50%</span>).
+              </h2><br>
+
+
+        </div>
+
+        <div class="world">
+          
+                <h1>Types of Radial Gradient or More Examples of Radial Gradient</h1>  
+                <h2><li>Radial Gradient with Custom Position: <br>By specifying the position, you can control where the gradient originates within the<br> element.</h2> 
+                <h3>The center point of a radial gradient can be positioned anywhere inside the element using coordinates or<br> keywords (like top, center, bottom, etc.).</h3>
+                <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background: radial-gradient( circle at position, color1, color2);</h3>
+                </div>
+                <h2>Example:</h2>
+                <h4>This creates a circular gradient that starts from the top-left corner of the element, transitioning from pink to blue.</h4>
+                <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">:radial-gradient( circle at top left, pink, blue);
+                </span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield6"></div>
+
+        </div><br>
+
+        <div class="world1">
+          
+                <h2><li>Radial Gradient with  Multiple Colors: <br>Color stops specify where one color starts fading into the next.<br> You can add as many stops as you want.</h2> 
+                <h3>A radial gradient can include multiple color stops, allowing for smooth transitions<br> between more than two colors.</h3>
+                <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background: radial-gradient(  circle, color1 stop1, color2 stop2, color3 stop3);</h3>
+                </div>
+                <h2>Example:</h2>
+                <h4>This gradient transitions from red to yellow to green to blue, with the colors changing at specific<br> percentages within the gradient.</h4>
+                <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">:radial-gradient( circle, red 0%, yellow 40%, green 80%, blue 100%);
+                </span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield7"></div>
+
+        </div><br>
+
+        <div class="world1">
+          
+                <h2><li>Repeating Radial Gradient: <br> This gradient repeats the color stops outward from the center, allowing for a<br> continuous pattern.</h2> 
+                <h3> A repeating radial gradient repeats the color pattern, forming multiple gradients within the element.</h3>
+                <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background:  repeating-radial-gradient(circle, color1, color2 stop2);</h3>
+                </div>
+                <h2>Example:</h2>
+                <h4> The gradient starts with red and repeats the yellow and green transitions every 10% and 20%, creating a repeating pattern.</h4>
+                <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">: repeating-radial-gradient(circle, red, yellow 10%, green 20%);
+                </span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield8"></div>
+
+        </div><br>
+
+
+        <div class="world2">
+          
+                <h2><li>Elliptical Gradient with Custom Size: <br> This allows for full control over the width and height of the ellipse, giving more <br>design flexibility.</h2> 
+                <h3> You can create an elliptical gradient with custom dimensions for the horizontal and vertical axes.</h3>
+                <h2>Syntax</h2>
+                <div class="syntax2"> 
+                        <h3>background: radial-gradient(ellipse width height, color1, color2);</h3>
+                </div>
+                <h2>Example:</h2>
+                <h4>This creates an elliptical gradient that is 60% of the element’s width and 40% of its height, transitioning from light blue<br> to dark blue.</h4>
+                <h3>CODE</h3>
+                <div class="code-block">
+                <span class="highlight">background-image</span><span class="rest">: radial-gradient(ellipse 60% 40%, lightblue, darkblue);
+                </span>
+                </div>
+                <h4>RESULT</h4>
+                <div class="yield9"></div>
+
+        </div><br>
+
+        <div class="world3">
+          
+          <h2><li>Radial Gradient with Transparent Colors: <br> Using transparent or semi-transparent colors can create smooth blending effects,<br> especially when layered over other elements.</h2> 
+          <h3>You can include transparent colors in a radial gradient, allowing for subtle transitions and overlays.</h3>
+          <h2>Syntax</h2>
+          <div class="syntax2"> 
+                  <h3>background: radial-gradient(circle, rgba(255, 0, 0, 0.5), transparent);</h3>
+          </div>
+          <h2>Example:</h2>
+          <h4>This creates a gradient that fades from semi-transparent red at the center to fully transparent at the edges.</h4>
+          <h3>CODE</h3>
+          <div class="code-block">
+          <span class="highlight">background-image</span><span class="rest">: radial-gradient( circle, rgba(255, 0, 0, 0.5), transparent);
+          </span>
+          </div>
+          <h4>RESULT</h4>
+          <div class="yield99"></div>
+
+        </div><br>
+
+        <h1>Conclution</h1>
+        <h3>Radial gradients in CSS offer a variety of options for creating smooth, dynamic color transitions. <br>By experimenting with different shapes, sizes, positions, and color stops, designers can achieve <br>a wide range of effects, from subtle backgrounds to bold design elements.</h3>
+
+
+
+    
+
+
+ 
+
+  </body>
+</html>
